@@ -1,0 +1,23 @@
+{
+  "couple": {
+    "partnerOne": "Emma",
+    "partnerTwo": "Lucas"
+  },
+  "event": {
+    "date": "2026-09-20",
+    "ceremonyTime": "16:00",
+    "city": "Florence",
+    "country": "Italy",
+    "venueName": "Villa Aurora",
+    "venueAddress": "Via delle Rose 12, Florence"
+  },
+  "contacts": {
+    "email": "wedding@example.com",
+    "phone": "+39 000 000 0000",
+    "rsvpDeadline": "2026-07-31"
+  },
+  "notes": {
+    "dressCode": "Formal / Elegant",
+    "childrenPolicy": "Adults only unless specified on invitation"
+  }
+}

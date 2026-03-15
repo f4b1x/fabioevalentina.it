@@ -1,0 +1,577 @@
+:root {
+  --accent-green: #5f6f52;
+  --accent-green-light: #7a8c6a;
+  --accent-green-dark: #3d4b36;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 120%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #5b6042;
+  line-height: 1.7;
+  background-color: #fffaf7;
+  background-image: url("../assets/images/pattern.jpg");
+  background-repeat: repeat;
+  background-size: 3000px 3000px;
+  background-position: top left;
+  overflow-x: hidden;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero,
+.details,
+.rsvp {
+  width: 100%;
+  padding: clamp(2rem, 6vw, 4rem) clamp(1rem, 3.5vw, 1.6rem);
+}
+
+.content {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  text-align: center;
+  padding-inline: 0.2rem;
+}
+
+.hero .content,
+.home-rsvp-callout .content {
+  width: min(980px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.86);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+}
+
+.date {
+  margin: 0;
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: #6d625b;
+  width: 100%;
+  text-align: center;
+}
+
+.couple-name {
+  margin: 0.7rem 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.9rem, 17.3vw, 8.1rem);
+  line-height: 1.05;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 8vw, 5rem);
+}
+
+.rsvp-title {
+  font-size: clamp(2.2rem, 10.4vw, 4.8rem);
+  white-space: normal;
+  text-wrap: balance;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-title {
+  font-size: clamp(2.2rem, 10.8vw, 8.4rem);
+  white-space: normal;
+  text-wrap: balance;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4.8vw, 2.4rem);
+}
+
+.place,
+.intro {
+  margin: 0.4rem 0;
+  font-size: 1.05rem;
+}
+
+.mobile-break-intro {
+  display: inline;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1.3rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--accent-green);
+  text-align: center;
+}
+
+.grid {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.home-details {
+  padding-top: 1.2rem;
+}
+
+.home-rsvp-callout {
+  margin-top: -0.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 1.8rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.86);
+  border: none;
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.question-box {
+  width: min(520px, 100%);
+  margin: 1.2rem auto 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.86);
+  text-align: left;
+}
+
+.question-box label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.question-box input,
+.question-box textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #d8c4b6;
+  border-radius: 10px;
+  font: inherit;
+  color: inherit;
+  background: #ffffff;
+}
+
+.rsvp-form > input {
+  margin-bottom: 1.6rem;
+}
+
+.guest-block > input {
+  margin-bottom: 2.4rem;
+}
+
+.rsvp-form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.rsvp-form h2 {
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+
+.rsvp-form > .button {
+  justify-self: center;
+}
+
+.guest-list {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.guest-block {
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.guest-title {
+  margin: 0 0 0.9rem;
+  font-weight: 600;
+  color: var(--accent-green-dark);
+}
+
+.question-box textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.choice-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.guest-block .choice-group + .choice-group {
+  margin-top: 1.8rem;
+}
+
+.guest-block label[for^="intolleranze-"] {
+  margin-top: 1.8rem;
+}
+
+.choice-group legend {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.choice-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.choice-option input {
+  width: auto;
+  margin: 0;
+}
+
+.question-box .button {
+  margin-top: 0.9rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background: var(--accent-green-light);
+}
+
+.form-status {
+  min-height: 1.2rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--accent-green-dark);
+}
+
+.success-box {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  text-align: center;
+}
+
+.success-text {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-green-dark);
+}
+
+.success-box .button {
+  margin-top: 1rem;
+}
+
+.ceremony-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.reception-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.ceremony-card h2,
+.reception-card h2 {
+  margin-bottom: 1.8rem;
+}
+
+.ceremony-card p,
+.reception-card p,
+.ceremony-card a,
+.reception-card a {
+  line-height: 1.35;
+}
+
+.ceremony-card p,
+.reception-card p {
+  margin: 0.28rem 0;
+}
+
+.reception-card p.route-gap {
+  margin-top: 2rem;
+}
+
+.reception-card .banking-ref {
+  font-size: 0.82em;
+  line-height: 1.3;
+}
+
+.ceremony-card a,
+.reception-card a {
+  display: inline-block;
+  margin-top: 0.95rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--accent-green-light);
+}
+
+.ceremony-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.reception-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+a {
+  color: var(--accent-green-dark);
+}
+
+.site-footer {
+  width: 100%;
+  padding: 0.45rem 0.8rem 0.7rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.56em;
+  line-height: 1.2;
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+.hero-home-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero-header-link {
+  display: block;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-header-link .date {
+  font-size: 2em;
+  margin: 0;
+}
+
+.hero-header-link .couple-name {
+  margin: 0.7rem 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.9rem, 17.3vw, 8.1rem);
+  line-height: 1.05;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .mobile-break-intro {
+    display: block;
+  }
+
+  .date {
+    font-size: clamp(0.7rem, 3.5vw, 1rem);
+  }
+
+  .couple-name {
+    margin-top: 1rem;
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    line-height: 1.08;
+  }
+
+  .hero-header-link .date {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+  }
+
+  .hero-header-link .couple-name {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    line-height: 1.08;
+  }
+
+  .home-title,
+  .rsvp-title {
+    font-size: clamp(1.9rem, 9vw, 3rem);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .details,
+  .rsvp {
+    padding: 1.6rem 0.9rem;
+  }
+
+  .question-box {
+    width: 100%;
+    padding: 0.9rem;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-rsvp-callout {
+    margin-top: 0;
+    padding-top: 0.48rem;
+    padding-bottom: 0.96rem;
+  }
+
+  .ceremony-links,
+  .reception-links {
+    margin-top: 0.95rem;
+  }
+
+  .home-rsvp-callout h2 {
+    font-size: clamp(1.45rem, 3.8vw, 1.92rem);
+  }
+
+  .home-rsvp-callout .button {
+    font-size: 0.8em;
+    padding: 0.6rem 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 100%;
+  }
+
+  .question-box {
+    padding: 0.8rem;
+  }
+
+  .guest-block {
+    padding: 0.8rem;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  .hero,
+  .details,
+  .rsvp {
+    padding: 2.4rem 1.2rem;
+  }
+
+  .date {
+    font-size: clamp(0.8rem, 2.1vw, 1.1rem);
+  }
+
+  .couple-name {
+    font-size: clamp(3rem, 8vw, 5.2rem);
+    line-height: 1.08;
+  }
+
+  .hero-header-link .date {
+    font-size: clamp(1.6rem, 4.2vw, 2.2rem);
+  }
+
+  .hero-header-link .couple-name {
+    font-size: clamp(3rem, 8vw, 5.2rem);
+    line-height: 1.08;
+  }
+
+  .home-rsvp-callout {
+    margin-top: 0;
+    padding-top: 0.7rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .grid {
+    gap: 0.9rem;
+  }
+
+  .question-box {
+    width: min(640px, 100%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-title,
+  .rsvp-title,
+  .couple-name {
+    white-space: nowrap;
+  }
+}

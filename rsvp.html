@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RSVP matrimonio di Fabio e Valentina."
+    />
+    <title>RSVP | Fabio & Valentina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="content">
+          <a class="hero-header-link" href="index.html" aria-label="Vai alla landing page">
+            <p class="date">23 maggio 2026</p>
+            <p class="couple-name">Fabio e Valentina</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="rsvp home-rsvp-callout">
+        <div class="content">
+          <h2>RSVP</h2>
+          <p class="intro">
+            Se stai rispondendo per più persone,
+            <span class="mobile-break-intro">avrai modo di inserire le risposte per tutti.</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="details home-details">
+        <div class="content">
+          <form class="question-box rsvp-form" id="rsvp-form" action="#" method="post">
+            <div id="guest-list" class="guest-list">
+              <section class="guest-block" data-guest-index="1">
+                <p class="guest-title">Invitato 1</p>
+
+                <label for="nome-completo-1">Nome Completo</label>
+                <input id="nome-completo-1" name="guests[0][nome-completo]" type="text" required />
+
+                <fieldset class="choice-group">
+                  <legend>Adulto / Bambino</legend>
+                  <label class="choice-option" for="adulto-1">
+                    <input id="adulto-1" name="guests[0][fascia-ospite]" type="radio" value="adulto" />
+                    <span>Adulto</span>
+                  </label>
+                  <label class="choice-option" for="bambino-1">
+                    <input id="bambino-1" name="guests[0][fascia-ospite]" type="radio" value="bambino" />
+                    <span>Bambino</span>
+                  </label>
+                </fieldset>
+
+                <fieldset class="choice-group">
+                  <legend>Parteciperai all'evento?</legend>
+                  <label class="choice-option" for="partecipa-si-1">
+                    <input id="partecipa-si-1" name="guests[0][parteciperai]" type="radio" value="si" />
+                    <span>Sì</span>
+                  </label>
+                  <label class="choice-option" for="partecipa-no-1">
+                    <input id="partecipa-no-1" name="guests[0][parteciperai]" type="radio" value="no" />
+                    <span>No</span>
+                  </label>
+                </fieldset>
+
+                <label for="intolleranze-1">Hai intolleranze o restrizioni alimentari da segnalare?</label>
+                <textarea
+                  id="intolleranze-1"
+                  name="guests[0][intolleranze]"
+                  rows="5"
+                  placeholder="Scrivi qui eventuali intolleranze o richieste alimentari specifiche"
+                ></textarea>
+              </section>
+            </div>
+
+            <button class="button button-secondary" id="add-guest-button" type="button">Aggiungi un altro invitato</button>
+            <button class="button" type="submit">Invia RSVP</button>
+            <p id="rsvp-status" class="form-status" aria-live="polite"></p>
+
+            <div id="rsvp-success" class="success-box" role="status" aria-live="polite" hidden>
+              <p class="success-text">RSVP inviato. Grazie!</p>
+              <a class="button" href="index.html">Ritorna alla home</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      window.RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbzjMvijUjiq8rRu9kfEBf66U6Lr6ds5MesCY8kaa6l6iBhkKy83EJxYsaWq7VzFw7nL/exec";
+    </script>
+    <script src="js/rsvp.js"></script>
+  </body>
+</html>

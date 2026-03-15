@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page matrimonio di Fabio e Valentina con dettagli evento e RSVP."
+    />
+    <title>Fabio & Valentina | Matrimonio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="page" id="home">
+      <section class="hero">
+        <div class="content">
+          <p class="date">23 maggio 2026</p>
+          <p class="couple-name">Fabio e Valentina</p>
+        </div>
+      </section>
+
+      <section class="rsvp home-rsvp-callout" id="rsvp">
+        <div class="content">
+          <h2>È gradita gentile conferma</h2>
+          <a class="button" href="#rsvp-form-section">RSVP</a>
+        </div>
+      </section>
+
+      <section class="details home-details">
+        <div class="grid">
+          <article class="card ceremony-card">
+            <h2>Cerimonia</h2>
+            <p>Sabato 23 maggio 2026 - ore 16:00</p>
+            <p>Chiesa dei SS. Cosma e Damiano</p>
+            <p>Rezzago (CO)</p>
+            <div class="ceremony-links">
+              <a href="https://maps.app.goo.gl/ZwgJhDwqapx5LQtx8" target="_blank" rel="noopener noreferrer">Indirizzo Chiesa</a>
+              <a href="https://maps.app.goo.gl/cmECuBKohiMQBJNw7" target="_blank" rel="noopener noreferrer">Indirizzo Parcheggio</a>
+            </div>
+          </article>
+          <article class="card reception-card">
+            <h2>Ricevimento</h2>
+            <p>La Perla del Segrino</p>
+            <p>Via Gaetano Donizetti, 2</p>
+            <p>Canzo (CO)</p>
+            <div class="reception-links">
+              <a href="https://maps.app.goo.gl/N8F8pr9XFEt7oXZA9" target="_blank" rel="noopener noreferrer">Indirizzo Villa</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="content">
+          <article class="card reception-card">
+            <h2>Come Raggiungerci</h2>
+            <p>
+              La Chiesa dei SS. Cosma e Damiano si trova a Rezzago, in provincia di Como, a circa un’ora e mezza di macchina da Milano.
+            </p>
+            <p>
+              Dopo il ristorante Rezzago, in via Santa Valeria 74, si trova un parcheggio <br> 
+              che è collegato alla piazza della Chiesa da una breve scalinata.
+            </p>
+            <p class="route-gap">
+              Conclusa la cerimonia, la festa proseguirà presso "La Perla del Segrino". <br>
+              La villa si trova a circa 15 minuti di macchina dalla chiesa e sarà possibile parcheggiare sul posto.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="content">
+          <article class="card reception-card">
+            <h2>Lista Nozze</h2>
+            <p>Cari amici e familiari,<br />la vostra presenza sarà per noi il dono più prezioso.</p>
+            <p>
+              Tuttavia, per chi lo desiderasse, un contributo per il viaggio di nozze sarà profondamente apprezzato e ci permetterà di rendere ancora più speciale questa esperienza.
+              Nel mese di agosto partiremo per la Namibia, un paese che ci ha sempre attratto.<br /><br />
+              Grazie per il vostro affetto e per volerci accompagnare in questo momento importante.
+            </p>
+            <p class="route-gap">Fabio e Valentina</p>
+            <p class="route-gap banking-ref"><strong>Riferimenti bancari</strong></p>
+            <p class="banking-ref"><strong>Banca:</strong> Fideuram</p>
+            <p class="banking-ref"><strong>IBAN:</strong> IT 87 M 0329 6016 0100 0067 6556 27</p>
+            <p class="banking-ref"><strong>Intestatari:</strong> Valentina De Rosa e Fabio Enrico Viganò</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="rsvp" id="rsvp-form-section">
+        <div class="content">
+          <form class="question-box rsvp-form" id="rsvp-form" action="#" method="post">
+            <h2>RSVP</h2>
+            <p class="intro">
+              Se stai rispondendo per più persone,
+              <span class="mobile-break-intro">avrai modo di inserire le risposte per tutti.</span>
+            </p>
+            <div id="guest-list" class="guest-list">
+              <section class="guest-block" data-guest-index="1">
+                <p class="guest-title">Invitato 1</p>
+
+                <label for="nome-completo-1">Nome Completo</label>
+                <input id="nome-completo-1" name="guests[0][nome-completo]" type="text" required />
+
+                <fieldset class="choice-group">
+                  <legend>Adulto / Bambino</legend>
+                  <label class="choice-option" for="adulto-1">
+                    <input id="adulto-1" name="guests[0][fascia-ospite]" type="radio" value="adulto" />
+                    <span>Adulto</span>
+                  </label>
+                  <label class="choice-option" for="bambino-1">
+                    <input id="bambino-1" name="guests[0][fascia-ospite]" type="radio" value="bambino" />
+                    <span>Bambino</span>
+                  </label>
+                </fieldset>
+
+                <fieldset class="choice-group">
+                  <legend>Parteciperai all'evento?</legend>
+                  <label class="choice-option" for="partecipa-si-1">
+                    <input id="partecipa-si-1" name="guests[0][parteciperai]" type="radio" value="si" />
+                    <span>Sì</span>
+                  </label>
+                  <label class="choice-option" for="partecipa-no-1">
+                    <input id="partecipa-no-1" name="guests[0][parteciperai]" type="radio" value="no" />
+                    <span>No</span>
+                  </label>
+                </fieldset>
+
+                <label for="intolleranze-1">Hai intolleranze o restrizioni alimentari da segnalare?</label>
+                <textarea
+                  id="intolleranze-1"
+                  name="guests[0][intolleranze]"
+                  rows="5"
+                  placeholder="Scrivi qui eventuali intolleranze o richieste alimentari specifiche"
+                ></textarea>
+              </section>
+            </div>
+
+            <button class="button button-secondary" id="add-guest-button" type="button">Aggiungi un altro invitato</button>
+            <button class="button" type="submit">Invia RSVP</button>
+            <p id="rsvp-status" class="form-status" aria-live="polite"></p>
+
+            <div id="rsvp-success" class="success-box" role="status" aria-live="polite" hidden>
+              <p class="success-text">RSVP inviato. Grazie!</p>
+              <a class="button" href="index.html">Ritorna alla home</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          <a href="https://www.monicanevacv.com" target="_blank" rel="noopener noreferrer">Illustrazioni Monica Caneva</a>
+        </p>
+      </footer>
+    </main>
+    <script>
+      window.RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbzjMvijUjiq8rRu9kfEBf66U6Lr6ds5MesCY8kaa6l6iBhkKy83EJxYsaWq7VzFw7nL/exec";
+    </script>
+    <script src="js/rsvp.js"></script>
+  </body>
+</html>
