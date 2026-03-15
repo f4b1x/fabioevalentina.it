@@ -366,6 +366,12 @@ h2 {
   line-height: 1.3;
 }
 
+.reception-card .banking-ref a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+}
+
 .ceremony-card a,
 .reception-card a {
   display: inline-block;
