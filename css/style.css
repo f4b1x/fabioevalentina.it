@@ -357,6 +357,10 @@ h2 {
   margin: 0.28rem 0;
 }
 
+.ceremony-datetime {
+  white-space: nowrap;
+}
+
 .reception-card p.route-gap {
   margin-top: 2rem;
 }
