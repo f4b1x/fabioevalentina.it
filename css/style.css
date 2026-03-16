@@ -519,7 +519,7 @@ a {
   }
 
   .home-rsvp-callout h2 {
-    font-size: clamp(1.45rem, 3.8vw, 1.92rem);
+    font-size: clamp(1.1rem, 3.2vw, 1.5rem);
   }
 
   .hero-subtitle {
